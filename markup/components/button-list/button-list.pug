@@ -1,0 +1,6 @@
+mixin button-list(data)
+  div(class="button-list button-list--" + data.mixin)
+    each item in data.items
+        button(class="button-list__btn" type="button") #{item.btnDescr}
+            svg(class='button-list__icon' width=item.width, height=item.height)
+                    use(xlink:href=item.iconHref)

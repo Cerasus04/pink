@@ -1,0 +1,11 @@
+include ../logo/logo.pug
+include ../nav-list/nav-list.pug
+include ../burger/burger.pug
+
+mixin header
+    header.header
+        nav.header__nav
+            .header__nav-mb
+                +logo(logo.default)
+                +burger()
+            +nav-list(nav.index)

@@ -1,0 +1,19 @@
+mixin table(data)
+	table.tariffs
+		thead
+			tr
+				each item in data.head
+					th(class=item.descr ? 'tariffs__header tariffs__header--' + item.label : 'tariffs__header')
+						p(class=item.hidden ? 'visually-hidden' : 'tariffs__title') #{item.title}
+						if item.price
+							p.tariffs__value #{item.price}
+		tbody
+			each item in data.body
+				tr
+					td.tariffs__option.tariffs__option--feature
+						span.tariffs__feature #{item.title}
+					each innerItem in item.bodyItem
+						td.tariffs__option
+							p.tariffs__feature-wrapper
+								span.tariffs__feature-name #{innerItem.name}
+								span(class=innerItem.value ? 'tariffs__feature-value tariffs__feature-value--on' : 'tariffs__feature-value tariffs__feature-value--off')

@@ -1,0 +1,4 @@
+mixin map(data)
+    .map
+        img.map__pin(src=data.pinSrc alt=data.pinAlt width=data.pinWidth height=data.pinHeight)
+        iframe.map__iframe(src=data.iframe width=data.iframeWidth heigth=data.iframeHeight aria-hidden="false" tabindex="0")

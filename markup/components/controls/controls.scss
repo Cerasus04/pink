@@ -1,0 +1,48 @@
+.controls {
+    display: none;
+}
+
+@media(min-width: $desktop-width) {
+    .controls {
+        position: absolute;
+        top: 10%;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 56px;
+    }
+
+    .controls__buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .controls__btn {
+        width: 22px;
+        height: 41px;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .controls__btn--prew {
+        @include bg-svg($icon-left);
+    }
+
+    .controls__btn--next {
+        @include bg-svg($icon-right);
+    }
+
+    .controls__paginator-wrapper {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .controls__paginator {
+        margin: 0 15px;
+    }
+
+}

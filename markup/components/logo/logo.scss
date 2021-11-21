@@ -1,0 +1,31 @@
+.logo {
+    display: block;
+}
+
+.logo__icon--mb {
+    display: block;
+}
+.logo__icon--tb {
+    display: none;
+}
+.logo__icon--dt {
+    display: none;
+}
+
+@media(min-width: $tablet-width) {
+    .logo__icon--mb {
+        display: none;
+    }
+    .logo__icon--tb {
+        display: block;
+    }
+}
+
+@media(min-width: $desktop-width) {
+    .logo__icon--tb {
+        display: none;
+    }
+    .logo__icon--dt {
+        display: block;
+    }
+}

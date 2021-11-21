@@ -1,0 +1,32 @@
+.reviews {
+    position: relative;
+    padding: 55px 0;
+}
+.reviews__wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(min-width: $tablet-width) {
+    .reviews {
+        padding: 109px 0 40px;
+    }
+}
+
+@media(min-width: $desktop-width) {
+    .reviews {
+        padding: 193px 0 40px;
+
+        &::before {
+            @include bg-svg($icon-comma);
+            content: "";
+            position: absolute;
+            top: 50px;
+            right: 50%;
+            background-repeat: no-repeat;
+            transform: translateX(50%);
+        }
+    }
+}

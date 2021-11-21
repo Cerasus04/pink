@@ -1,0 +1,10 @@
+mixin review-slider(data)
+        .slider
+            ul.slider__list
+                each item in data
+                    li(class=item.selected ? 'slider__item slider__item--active' : 'slider__item')
+                        blockquote.slider__blockquote
+                            .slider__author-wrap
+                                cite.slider__author #{item.author}
+                                    span.slider__author-tb #{item.tbText}
+                            p.slider__text #{item.text}

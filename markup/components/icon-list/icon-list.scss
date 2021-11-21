@@ -1,0 +1,58 @@
+.icon-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-top: 38px;
+}
+
+.icon-list__list {
+    @include nl;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon-list__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--1 {
+        @include bg-svg($icon-apple);
+    }
+    &--2 {
+        @include bg-svg($icon-android);
+    }
+    &--3 {
+        @include bg-svg($icon-microsoft);
+    }
+}
+
+.icon-list__text {
+    margin: 0;
+    padding-top: 28px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    color: $white;
+}
+
+@media(min-width: $tablet-width) {
+    .icon-list {
+        padding-top: 51px;
+    }
+    .icon-list__text {
+        padding-top: 38px;
+    }
+}
+
+@media(min-width: $desktop-width) {
+    .icon-list {
+        padding-top: 75px;
+    }
+
+    .icon-list__text {
+        padding-top: 58px;
+    }
+}

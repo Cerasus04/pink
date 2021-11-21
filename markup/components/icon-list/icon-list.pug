@@ -1,0 +1,6 @@
+mixin icon-list(data)
+    .icon-list
+        ul.icon-list__list
+            each item in data
+                li(class='icon-list__item icon-list__item--' + item.mod)
+        p.icon-list__text Доступно для iPhone, iPad, Android, Windows Phone, OS&nbsp;X, Windows 8

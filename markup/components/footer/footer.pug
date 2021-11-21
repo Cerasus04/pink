@@ -1,0 +1,55 @@
+include ../logo/logo.pug
+include ../social/social.pug
+
+mixin footer(data)
+    footer.footer
+        .container.footer__container
+            +logo({
+                    href : '#',
+                    icons : [
+                        {
+                            'media' : 'mb',
+                            'width': '146',
+                            'height': '40',
+                            'iconHref': '%=static=%img/assets/logo/logo-footer.svg#footer'
+                        }, {
+                            'media' : 'tb',
+                            'width': '146',
+                            'height': '40',
+                            'iconHref': '%=static=%img/assets/logo/logo-footer.svg#footer'
+                        }, {
+                            'media' : 'dt',
+                            'width': '147',
+                            'height': '40',
+                            'iconHref': '%=static=%img/assets/logo/logo-footer-dt.svg#footer-dt'
+                        }
+                    ]
+                }
+            )
+            +social([
+                {
+                    'href' :'#',
+                    'ariaLabel': 'Twitter',
+                    'iconHref': '%=static=%img/assets/social/icon-twitter.svg#twitter',
+                    'width' : '18',
+                    'height' : '14'
+                },
+                {
+                    'href' :'#',
+                    'ariaLabel': 'Facebook',
+                    'iconHref': '%=static=%img/assets/social/icon-fb.svg#fb',
+                    'width' : '9',
+                    'height' : '18'
+                },
+                {
+                    'href' :'#',
+                    'ariaLabel': 'Youtube',
+                    'iconHref': '%=static=%img/assets/social/icon-youtube.svg#youtube',
+                    'width' : '15',
+                    'height' : '13'
+                }
+            ])
+            a.footer__dev-link(href="#" target="_blank")
+                span.footer__dev-text Разработано
+                svg.footer__dev-icon(width="27", height="34")
+                        use(xlink:href='%=static=%img/assets/footer/academy.svg#academy')

@@ -1,0 +1,10 @@
+mixin contacts(data)
+    .contacts-list
+        each item in data
+            p(class='contacts-list__text-wrapper contacts-list__text-wrapper--' + item.current)
+                span.contacts-list__name #{item.name}
+                if item.link
+                    a.contacts-list__value(href=item.href) #{item.linkText}
+                if item.text
+                    span.contacts-list__value !{item.span}
+
