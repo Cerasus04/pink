@@ -14,8 +14,8 @@ include ../components/map/map.pug
 append section
     .promo.promo--index
         .container
-            .container__row
-                .container__col-6.container__col-md-3.container__col-xl-2
+            .row
+                .col-12.col-md-3.col-xl-4
                     +title-main({titleText: 'Взгляните на жизнь иначе!'})
                     +button-link({buttonDescr : 'Скачать приложение'})
                     +icon-list([
@@ -24,60 +24,57 @@ append section
                         {mod: '3'}
                     ])
     .post
-        .container
-            .container__row
-                .container__col-6
-                    +title({titleText: 'Устали от серости мегаполиса?'})
-                    +title({titleText: 'Нам есть, что вам <br> предложить!'})
-            .container__row
-                .post__all-screen.container__col-6.container__offset-md-3.container__offset-xl-none
-                    +text-block([
-                        {
-                            wrap: '1',
-                            title : 'Поднимает настроение',
-                            text: 'Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!'
-                        },{
-                            wrap: '2',
-                            title : 'Меняет мир вокруг',
-                            text: 'Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект'
-                        }, {
-                            wrap: '3',
-                            title : 'Заводит новых друзей',
-                            text: 'Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых'
-                        }
-                    ])
-            .container__row
-                .post__tb-screen.container__col-md-6.container__offset-md-3
+        .container.col-12
+            +title({titleText: 'Устали от серости мегаполиса?'})
+            +title({titleText: 'Нам есть, что вам <br> предложить!'})
+            .row
+                .post__all-screen.bg-color
+                    .col-12.col-md-6.offset-md-6.offset-xl-none
+                        +text-block([
+                            {
+                                wrap: '1',
+                                title : 'Поднимает настроение',
+                                text: 'Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!'
+                            },{
+                                wrap: '2',
+                                title : 'Меняет мир вокруг',
+                                text: 'Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект'
+                            }, {
+                                wrap: '3',
+                                title : 'Заводит новых друзей',
+                                text: 'Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых'
+                            }
+                        ])
+            .row
+                .post__tb-screen.md-12.offset-md-6
                     h2.post__title Эффект на 24 часа!
                     p.post__text Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
                     a.post__link Узнать больше об исследовании
-    .reviews
-        .container
-            .container__row
-                .reviews__wrap.container__col-6
-                    +review-slider([
-                        {
-                            selected: true,
-                            author: 'Николай Петров',
-                            tbText: '25 лет, водитель трамвая',
-                            text: '«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»'
-                        },{
-                            author: 'Николай Петров',
-                            tbText: '25 лет, водитель трамвая',
-                            text: '«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»'
-                        },{
-                            author: 'Николай Петров',
-                            tbText: '25 лет, водитель трамвая',
-                            text: '«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»'
-                        }
-                    ])
-                    +paginator([
-                        {selected: true},
-                        {selected: false},
-                        {selected: false}
-                    ])
-                    +controls()
-    .table
+    .container
+        .row.row--column.col-12
+            +review-slider([
+                {
+                    selected: true,
+                    author: 'Николай Петров',
+                    tbText: '25 лет, водитель трамвая',
+                    text: '«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»'
+                },{
+                    author: 'Николай Петров',
+                    tbText: '25 лет, водитель трамвая',
+                    text: '«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»'
+                },{
+                    author: 'Николай Петров',
+                    tbText: '25 лет, водитель трамвая',
+                    text: '«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»'
+                }
+            ])
+            +paginator([
+                {selected: true},
+                {selected: false},
+                {selected: false}
+            ])
+            +controls()
+    .bg-color.row.row--column
         +table({
             'head' : [
                 {
@@ -137,30 +134,30 @@ append section
             {selected: false},
             {selected: false}
         ])
-    .contacts
-        .container
-            +title({titleText: 'Остались вопросы? <br> Свяжитесь с нами!'})
-            +contacts([
-                {
-                    link: true,
-                    name: 'Звоните ',
-                    href: 'tel:+78125556666',
-                    linkText: '+7 (812) 555-66-66',
-                    current: 'tel'
+    .container
+        +title({titleText: 'Остались вопросы? <br> Свяжитесь с нами!'})
+    .row.row--column.row--row-md.row--center-md
+        +contacts(
+            {
+                link: true,
+                name: 'Звоните ',
+                href: 'tel:+78125556666',
+                linkText: '+7 (812) 555-66-66',
+                current: 'tel'
 
-                },{
-                    link: true,
-                    name: 'Пишите ',
-                    href: 'mailto:mail@htmlacademy.ru',
-                    linkText: 'mail@htmlacademy.ru',
-                    current: 'email'
-                },{
-                    text: true,
-                    name: 'Приезжайте в гости ',
-                    span: 'ул. Большая <br> Конюшенная, 19/8',
-                    current: 'address'
-                }
-
-            ])
-    .contacts-map
+            })
+        +contacts({
+                link: true,
+                name: 'Пишите ',
+                href: 'mailto:mail@htmlacademy.ru',
+                linkText: 'mail@htmlacademy.ru',
+                current: 'email'
+            })
+        +contacts({
+                text: true,
+                name: 'Приезжайте в гости ',
+                span: 'ул. Большая <br> Конюшенная, 19/8',
+                current: 'address'
+            })
+    .row
         +map(map.defaults)

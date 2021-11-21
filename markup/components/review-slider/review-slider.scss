@@ -1,5 +1,6 @@
 .slider {
-
+    position: relative;
+    padding: 55px 0;
 }
 .slider__list {
     @include nl;
@@ -36,6 +37,19 @@
     line-height: 30px;
 }
 @media(min-width: $tablet-width) {
+    .slider {
+        padding: 193px 0 40px;
+
+        &::before {
+            @include bg-svg($icon-comma);
+            content: "";
+            position: absolute;
+            top: 50px;
+            right: 50%;
+            background-repeat: no-repeat;
+            transform: translateX(50%);
+        }
+    }
     .slider__author-wrap {
         padding-top: 50px;
         order: 1;
