@@ -20,6 +20,7 @@
 .container {
     min-width: 280px;
     padding: 0 20px;
+    margin: 0 auto;
 }
 
 .row {
@@ -35,11 +36,32 @@
 .row--row {
     flex-direction: row;
 }
+.row--reverse {
+    flex-direction: row-reverse;
+}
 .row--center {
     justify-content: center;
 }
 .row--between {
     justify-content: space-between;
+}
+.row--around {
+    justify-content: space-around;
+}
+.row--evenly {
+    justify-content: space-evenly;
+}
+.row--top {
+    align-items: flex-start;
+}
+.row--middle {
+    align-items: center;
+}
+.row--bottom {
+    align-items: flex-end;
+}
+.row--evenly {
+    justify-content: space-evenly;
 }
 .col-auto {
     flex: 0 0 auto;
@@ -105,6 +127,10 @@
     flex: 0 0 auto;
     width: 100%;
 }
+.offset-0 {
+    margin-left: unset;
+}
+
 .offset-1 {
     margin-left: 8.33333333%;
 }
@@ -159,11 +185,32 @@
     .row--row-md {
         flex-direction: row;
     }
+    .row--reverse-md {
+        flex-direction: row-reverse;
+    }
     .row--center-md {
         justify-content: center;
     }
     .row--between-md {
         justify-content: space-between;
+    }
+    .row--around-md {
+        justify-content: space-around;
+    }
+    .row--evenly-md {
+        justify-content: space-evenly;
+    }
+    .row--top-md {
+        align-items: flex-start;
+    }
+    .row--middle-md {
+        align-items: center;
+    }
+    .row--bottom-md {
+        align-items: flex-end;
+    }
+    .row--evenly-md {
+        justify-content: space-evenly;
     }
     .col-md-1 {
         flex: 0 0 auto;
@@ -226,7 +273,7 @@
     }
 
     .offset-md-0 {
-        margin-left: 0;
+        margin-left: unset;
     }
 
     .offset-md-1 {
@@ -288,11 +335,32 @@
     .row--row-xl {
         flex-direction: row;
     }
+    .row--reverse-xl {
+        flex-direction: row-reverse;
+    }
     .row--center-xl {
         justify-content: center;
     }
     .row--between-xl {
         justify-content: space-between;
+    }
+    .row--around-xl {
+        justify-content: space-around;
+    }
+    .row--evenly-xl {
+        justify-content: space-evenly;
+    }
+    .row--top {
+        align-items: flex-start;
+    }
+    .row--middle {
+        align-items: center;
+    }
+    .row--bottom {
+        align-items: flex-end;
+    }
+    .row--evenly {
+        justify-content: space-evenly;
     }
     .container {
         width: calc(100% - 260px);
@@ -366,7 +434,7 @@
     }
 
     .offset-xl-0 {
-        margin-left: 0;
+        margin-left: unset;
     }
 
     .offset-xl-1 {

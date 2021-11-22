@@ -23,33 +23,37 @@ append section
                         {mod: '2'},
                         {mod: '3'}
                     ])
-    .post
+
+    .container.col-12
+        +title({titleText: 'Устали от серости мегаполиса?'})
+        +title({titleText: 'Нам есть, что вам <br> предложить!'})
+    .row.bg-color
         .container.col-12
-            +title({titleText: 'Устали от серости мегаполиса?'})
-            +title({titleText: 'Нам есть, что вам <br> предложить!'})
-            .row
-                .post__all-screen.bg-color
-                    .col-12.col-md-6.offset-md-6.offset-xl-none
-                        +text-block([
-                            {
-                                wrap: '1',
-                                title : 'Поднимает настроение',
-                                text: 'Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!'
-                            },{
-                                wrap: '2',
-                                title : 'Меняет мир вокруг',
-                                text: 'Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект'
-                            }, {
-                                wrap: '3',
-                                title : 'Заводит новых друзей',
-                                text: 'Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых'
-                            }
-                        ])
-            .row
-                .post__tb-screen.md-12.offset-md-6
-                    h2.post__title Эффект на 24 часа!
-                    p.post__text Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
-                    a.post__link Узнать больше об исследовании
+            +text-block([
+                {
+                    wrap: '1',
+                    title : 'Поднимает настроение',
+                    text: 'Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!'
+                },{
+                    wrap: '2',
+                    title : 'Меняет мир вокруг',
+                    text: 'Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект'
+                }, {
+                    wrap: '3',
+                    title : 'Заводит новых друзей',
+                    text: 'Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых'
+                }
+            ])(class='text-block--pseudo')
+    .row
+        .container.col-12
+            +text-block([
+                {
+                    title : 'Эффект на 24 часа',
+                    text: 'Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!',
+                    link: 'Узнать больше об исследовании',
+                    href: '#'
+                }
+            ])(class='text-block--timer')
     .container
         .row.row--column.col-12
             +review-slider([
@@ -136,28 +140,28 @@ append section
         ])
     .container
         +title({titleText: 'Остались вопросы? <br> Свяжитесь с нами!'})
-    .row.row--column.row--row-md.row--center-md
-        +contacts(
-            {
-                link: true,
-                name: 'Звоните ',
-                href: 'tel:+78125556666',
-                linkText: '+7 (812) 555-66-66',
-                current: 'tel'
+        .row.row--column.row--row-md.row--center-md
+            +contacts(
+                {
+                    link: true,
+                    name: 'Звоните ',
+                    href: 'tel:+78125556666',
+                    linkText: '+7 (812) 555-66-66',
+                    current: 'tel'
 
-            })
-        +contacts({
-                link: true,
-                name: 'Пишите ',
-                href: 'mailto:mail@htmlacademy.ru',
-                linkText: 'mail@htmlacademy.ru',
-                current: 'email'
-            })
-        +contacts({
-                text: true,
-                name: 'Приезжайте в гости ',
-                span: 'ул. Большая <br> Конюшенная, 19/8',
-                current: 'address'
-            })
+                })
+            +contacts({
+                    link: true,
+                    name: 'Пишите ',
+                    href: 'mailto:mail@htmlacademy.ru',
+                    linkText: 'mail@htmlacademy.ru',
+                    current: 'email'
+                })
+            +contacts({
+                    text: true,
+                    name: 'Приезжайте в гости ',
+                    span: 'ул. Большая <br> Конюшенная, 19/8',
+                    current: 'address'
+                })
     .row
         +map(map.defaults)
