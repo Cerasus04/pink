@@ -1,13 +1,11 @@
 .nav-list {
     @include nl;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
     &--close {
         display: none;
-    }
-    &--open {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 100%;
     }
 }
 
@@ -31,11 +29,6 @@
 
 @media(min-width: $desktop-width) {
     .nav-list {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        width: 67%;
     }
     .nav-list__item {
         // margin-right: 79px;

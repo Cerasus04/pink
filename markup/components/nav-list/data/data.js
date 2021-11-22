@@ -3,7 +3,7 @@ data = {
         default: [
             {
                 currentURL: true,
-                'href': 'index.html',
+                'href': '#',
                 'text': 'Главная'
             }, {
                 'href': '#',

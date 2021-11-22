@@ -4,8 +4,8 @@ include ../burger/burger.pug
 
 mixin header
     header.header
-        nav.header__nav
-            .header__nav-mb
+        nav.row.row.row--between-xl.row--middle.header__nav
+            .row.row--between.row--middle.header__nav-mb
                 +logo(logo.default)
                 +burger()
-            +nav-list(nav.default)
+            +nav-list(nav.default)(class="col-xl-8")
