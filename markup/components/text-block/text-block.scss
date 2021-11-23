@@ -1,4 +1,4 @@
-.text-block--pseudo {
+.text-block--img {
     position: relative;
 
     &:last-child {
@@ -20,7 +20,7 @@
 
 .text-block__title {
     margin: 0;
-    padding-bottom: 24px;
+    // padding-bottom: 24px;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -28,7 +28,7 @@
 }
 .text-block__text {
     margin: 0;
-    padding-bottom: 43px;
+    // padding-bottom: 43px;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -38,7 +38,7 @@
     .text-block {
         padding-left: 50%;
     }
-    .text-block--pseudo {
+    .text-block--img {
 
         &:last-child {
             padding-bottom: 0;
@@ -76,7 +76,7 @@
 
         & .text-block__title {
             margin: 0;
-            padding-bottom: 27px;
+            // padding-bottom: 27px;
             font-size: 30px;
             font-weight: 700;
             line-height: 36px;
@@ -105,7 +105,7 @@
             @include bg-svg($icon-timer-dt);
         }
     }
-    .text-block--pseudo {
+    .text-block--img {
         display: flex;
         column-gap: 4%;
         padding-left: 0;
@@ -145,7 +145,7 @@
         }
     }
     .text-block__title {
-        padding-bottom: 35px;
+        // padding-bottom: 35px;
         font-size: 30px;
         line-height: 30px;
         text-align: center;

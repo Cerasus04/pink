@@ -1,4 +1,4 @@
 mixin paginator(data)
-    .paginator
+    .paginator&attributes(attributes)
         each item in data
             div(class=item.selected ? 'paginator__item paginator__item--active' : 'paginator__item')

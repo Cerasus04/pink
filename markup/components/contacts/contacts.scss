@@ -58,14 +58,14 @@
 
 //     .contacts-list__text-wrapper {
 //         width: 50%;
-//         padding-top: 12px;
+//         // padding-top: 12px;
 //         box-sizing: border-box;
 //     }
 
 //     .contacts-list__value {
 //         display: block;
 //         padding: 0;
-//         padding-bottom: 21px;
+//         // padding-bottom: 21px;
 //     }
 // }
 // @media(min-width: $desktop-width) {
@@ -85,7 +85,7 @@
 
 //     .contacts-list__value {
 //         padding: 0;
-//         padding-top: 22px;
+//         // padding-top: 22px;
 //     }
 
 //     .contacts-list__text-wrapper--address {
@@ -148,14 +148,14 @@
 @media(min-width: $tablet-width) {
     .contacts-text {
         width: 50%;
-        padding-top: 12px;
+        // padding-top: 12px;
         box-sizing: border-box;
     }
 
     .contacts-text__value {
         display: block;
         padding: 0;
-        padding-bottom: 21px;
+        // padding-bottom: 21px;
     }
 }
 @media(min-width: $desktop-width) {
@@ -165,7 +165,7 @@
 
     .contacts-text__value {
         padding: 0;
-        padding-top: 22px;
+        // padding-top: 22px;
     }
 
     .contacts-text--address {

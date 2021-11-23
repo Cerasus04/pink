@@ -3,7 +3,7 @@ include ../social/social.pug
 
 mixin footer(data)
     footer.footer
-        .container.row.row--column.row--row-md.row--between-md
+        .container.grid.grid--column.grid--row-md.grid--between-md
             +logo({
                     href : '#',
                     icons : [
@@ -49,7 +49,7 @@ mixin footer(data)
                     'height' : '13'
                 }
             ])
-            a.row.row--between-md.row--middle-md.footer__dev-link(href="#" target="_blank")
+            a.grid.grid--between-md.grid--middle-md.footer__dev-link(href="#" target="_blank")
                 span.footer__dev-text Разработано
                 svg.footer__dev-icon(width="27", height="34")
                         use(xlink:href='%=static=%img/assets/footer/academy.svg#academy')

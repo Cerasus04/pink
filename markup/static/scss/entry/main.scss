@@ -9,12 +9,12 @@
 /* Plugins, which is used in current project. */
 @import 'partials/_plugins.scss';
 
+@import '../etc/grid.scss';
 /* Components, which is used in current project. */
 @import 'partials/components.scss';
 
 /* Additional style files. */
 @import '../etc/etc.scss';
-@import '../etc/grid.scss';
 @import '../etc/promo.scss';
 @import '../etc/post.scss';
 @import '../etc/reviews.scss';
