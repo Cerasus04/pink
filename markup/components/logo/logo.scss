@@ -1,7 +1,15 @@
 .logo {
     display: block;
 }
+.logo__icon {
+    &:hover {
+        color: $pink;
+    }
 
+    &:active {
+        color: rgba($white, 0.3);
+    }
+}
 .logo__icon--mb {
     display: block;
 }

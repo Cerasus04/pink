@@ -1,7 +1,7 @@
 mixin logo(data)
     a(class='logo' href=data.href aria-label="Логотип Pink")&attributes(attributes)
         each item in data.icons
-            svg(class='logo__icon + logo__icon--' + item.media width=item.width, height=item.height)
+            svg(class='logo__icon logo__icon--' + item.media width=item.width, height=item.height)
                 use(xlink:href=item.iconHref)
 
 

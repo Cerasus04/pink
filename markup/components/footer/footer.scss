@@ -7,6 +7,17 @@
     font-size: 14px;
     line-height: 18px;
 }
+.footer__dev-link {
+    color: $blue-dark;
+
+    &:hover {
+        color: $pink;
+    }
+
+    &:active {
+        color: rgba($blue-dark, 0.3);
+    }
+}
 @media(min-width: $tablet-width) {
     .footer {
         padding: 36px 0;
