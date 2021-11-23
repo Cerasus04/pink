@@ -24,7 +24,27 @@
 .mt-example {
     margin-top: 47px !important;
 }
-
+.mt-54 {
+    margin-top: 54px;
+}
+.mt-100 {
+    margin-top: 100px;
+}
+.mt-60 {
+    margin-top: 60px;
+}
+.mt-85 {
+    margin-top: 85px;
+}
+.column-gap {
+    column-gap: 20px;
+}
+.row-gap-20 {
+    row-gap: 20px;
+}
+.row-gap-41 {
+    row-gap: 41px;
+}
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -181,6 +201,18 @@
     .mt-example {
         margin-top: 56px;
     }
+    .mt-54-md {
+        margin-top: 54px;
+    }
+    .mt-100-md {
+        margin-top: 100px;
+    }
+    .mt-60-md {
+        margin-top: 60px;
+    }
+    .mt-85-md {
+        margin-top: 85px;
+    }
     .container {
         padding: 0 20px;
     }
@@ -329,6 +361,18 @@
 @media(min-width: $desktop-width) {
     .mt-example {
         margin-top: 77px;
+    }
+    .mt-54-xl {
+        margin-top: 54px;
+    }
+    .mt-100-xl {
+        margin-top: 100px;
+    }
+    .mt-60-xl {
+        margin-top: 60px;
+    }
+    .mt-85-xl {
+        margin-top: 85px;
     }
     .bg-color {
         &::before {

@@ -3,13 +3,13 @@ data = {
         default: [
             {
                 currentURL: true,
-                'href': '#',
+                'href': 'index.html',
                 'text': 'Главная'
             }, {
-                'href': '#',
+                'href': 'photo.html',
                 'text': 'Фотографии'
             }, {
-                'href': '#',
+                'href': 'form.html',
                 'text': 'Конкурс'
             }, {
                 'href': '#',

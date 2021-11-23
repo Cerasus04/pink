@@ -3,7 +3,7 @@ include ../social/social.pug
 
 mixin footer(data)
     footer.footer
-        .container.grid.grid--column.grid--row-md.grid--between-md
+        .container.grid.grid--column.grid--row-md.grid--between-md.row-gap-41
             +logo({
                     href : '#',
                     icons : [
@@ -48,7 +48,7 @@ mixin footer(data)
                     'width' : '15',
                     'height' : '13'
                 }
-            ])(class='social-list--footer')
+            ])
             a.grid.grid--between-md.grid--middle.footer__dev-link(href="#" target="_blank")
                 span.footer__dev-text Разработано
                 svg.footer__dev-icon(width="27", height="34")

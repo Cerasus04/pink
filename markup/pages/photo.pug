@@ -1,0 +1,151 @@
+extends _template.pug
+include ../components/title/title.pug
+include ../components/title-main/title-main.pug
+include ../components/button-link/button-link.pug
+include ../components/text-block/text-block.pug
+include ../components/item-block/item-block.pug
+
+
+append section
+    .promo
+        .container
+            .grid.grid--center
+                .grid__col-8.grid__col-xl-6
+                        +title-main({titleText: 'Фотографии пользователей'})
+    .container
+        .grid.grid--center
+            .grid__col-12.grid__col-md-10.grid__col-xl-8.mt-54.mt-100md.mt-85-xl
+                +text-block([
+                    {text: 'Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?'}
+                ])
+
+    .container
+        .grid.row-gap-20.column-gap-20
+            +item-block([
+                {
+                    sourse: [
+                        {
+                            'media' : '(min-width: 960px)',
+                            'srcset' : '%=static=%content/photo-car-desktop@1x.jpg, %=static=%content/photo-car-desktop@2x.jpg 2x'
+                        },{
+                            'media' : '(min-width: 660px)',
+                            'srcset' : '%=static=%content/photo-car-tablet@1x.jpg, %=static=%content/photo-car-tablet@2x.jpg 2x'
+                        }
+                    ],
+                    src: '%=static=%content/photo-car-mobile@1x.jpg',
+                    srcset: '%=static=%content/photo-car-mobile@2x.jpg 2x',
+                    width: '280',
+                    height: '180',
+                    name: 'Левон',
+                    time: '(5 часов назад)',
+                    text: 'Вчера он на луну летал, сегодня в руки к нам попал.',
+                    like: '356',
+                    likeActive: true
+                }
+            ])(class='grid__col-12 grid__col-md-6 rgid__col-xl-4')
+            +item-block([
+                {
+                    sourse: [
+                        {
+                            'media' : '(min-width: 960px)',
+                            'srcset' : '%=static=%content/photo-drumset-desktop@1x.jpg, %=static=%content/photo-drumset-desktop@2x.jpg 2x'
+                        },{
+                            'media' : '(min-width: 660px)',
+                            'srcset' : '%=static=%content/photo-drumset-tablet@1x.jpg, %=static=%content/photo-drumset-tablet@2x.jpg 2x'
+                        }
+                    ],
+                    src: '%=static=%content/photo-drumset-mobile@1x.jpg',
+                    srcset: '%=static=%content/photo-drumset-mobile@2x.jpg 2x',
+                    width: '280',
+                    height: '180',
+                    name: 'Антон',
+                    time: '(12 часов назад)',
+                    text: 'Соседи будут рады!',
+                    like: '666'
+                }
+            ])(class='grid__col-12 grid__col-md-6 rgid__col-xl-4')
+            +item-block([
+                {
+                    sourse: [
+                        {
+                            'media' : '(min-width: 960px)',
+                            'srcset' : '%=static=%content/photo-window-desktop@1x.jpg, %=static=%content/photo-window-desktop@2x.jpg 2x'
+                        },{
+                            'media' : '(min-width: 660px)',
+                            'srcset' : '%=static=%content/photo-window-tablet@1x.jpg, %=static=%content/photo-window-tablet@2x.jpg 2x'
+                        }
+                    ],
+                    src: '%=static=%content/photo-window-mobile@1x.jpg',
+                    srcset: '%=static=%content/photo-window-mobile@2x.jpg 2x',
+                    width: '280',
+                    height: '180',
+                    name: 'Борис',
+                    time: '(20 часов назад)',
+                    text: 'Здесь могла быть ваша цитата о высоком и вечном.',
+                    like: '215'
+                }
+            ])(class='grid__col-12 grid__col-md-6 rgid__col-xl-4')
+            +item-block([
+                {
+                    sourse: [
+                        {
+                            'media' : '(min-width: 960px)',
+                            'srcset' : '%=static=%content/photo-fair-desktop@1x.jpg, %=static=%content/photo-fair-desktop@2x.jpg 2x'
+                        },{
+                            'media' : '(min-width: 660px)',
+                            'srcset' : '%=static=%content/photo-fair-tablet@1x.jpg, %=static=%content/photo-fair-tablet@2x.jpg 2x'
+                        }
+                    ],
+                    src: '%=static=%content/photo-fair-mobile@1x.jpg',
+                    srcset: '%=static=%content/photo-fair-mobile@2x.jpg 2x',
+                    width: '280',
+                    height: '180',
+                    name: 'Сергей',
+                    time: '(25 часов назад)',
+                    text: 'Самая кубанская в мире!',
+                    like: '4'
+                }
+            ])(class='grid__col-12 grid__col-md-6 rgid__col-xl-4')
+            +item-block([
+                {
+                    sourse: [
+                        {
+                            'media' : '(min-width: 960px)',
+                            'srcset' : '%=static=%content/photo-pov-desktop@1x.jpg, %=static=%content/photo-pov-desktop@2x.jpg 2x'
+                        },{
+                            'media' : '(min-width: 660px)',
+                            'srcset' : '%=static=%content/photo-pov-tablet@1x.jpg, %=static=%content/photo-pov-tablet@2x.jpg 2x'
+                        }
+                    ],
+                    src: '%=static=%content/photo-pov-mobile@1x.jpg',
+                    srcset: '%=static=%content/photo-pov-mobile@2x.jpg 2x',
+                    width: '280',
+                    height: '180',
+                    name: 'Максим',
+                    time: '(40 часов назад)',
+                    text: 'Где снег-то?',
+                    like: '150'
+                }
+            ])(class='grid__col-12 grid__col-md-6 rgid__col-xl-4')
+            +item-block([
+                {
+                    sourse: [
+                        {
+                            'media' : '(min-width: 960px)',
+                            'srcset' : '%=static=%content/photo-wing-desktop@1x.jpg, %=static=%content/photo-wing-desktop@2x.jpg 2x'
+                        },{
+                            'media' : '(min-width: 660px)',
+                            'srcset' : '%=static=%content/photo-wing-tablet@1x.jpg, %=static=%content/photo-wing-tablet@2x.jpg 2x'
+                        }
+                    ],
+                    src: '%=static=%content/photo-wing-mobile@1x.jpg',
+                    srcset: '%=static=%content/photo-wing-mobile@2x.jpg 2x',
+                    width: '280',
+                    height: '180',
+                    name: 'Надежда',
+                    time: '(40 часов назад)',
+                    text: 'Всем GM и взаимные лайки!',
+                    like: '2560'
+                }
+            ])(class='grid__col-12 grid__col-md-6 rgid__col-xl-4')
+

@@ -2,7 +2,8 @@ mixin text-block(data)
     .text-block&attributes(attributes)
         each item in data
             .text-block__wrap(class=item.wrap ? 'text-block__wrap--' + item.wrap : '')
-                h3.text-block__title #{item.title}
+                if item.title
+                    h3.text-block__title #{item.title}
                 p.text-block__text #{item.text}
                 if item.link
                     a.text-block__link(href=item.href) #{item.link}

@@ -12,6 +12,7 @@
     border-radius: 29px;
 }
 .button-link--download {
+    margin-top: 350px;
     color: $white;
     border: 3px solid $white;
 
@@ -28,5 +29,8 @@
 @media(min-width: $tablet-width) {
     .button-link {
         width: 300px;
+    }
+    .button-link--download {
+        margin-top: 0;
     }
 }
