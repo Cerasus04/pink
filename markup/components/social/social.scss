@@ -18,6 +18,15 @@
     &:last-child {
         margin-right: 0;
     }
+
+    &:hover {
+        border: 3px solid $blue-dark;
+    }
+
+    &:active {
+        opacity: 0.3;
+        border: 3px solid rgba($blue-dark, 0.1);
+    }
 }
 .social-list__icon {
 

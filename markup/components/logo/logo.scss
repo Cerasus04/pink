@@ -1,15 +1,14 @@
 .logo {
     display: block;
-}
-.logo__icon {
     &:hover {
-        color: $pink;
+        opacity: 0.5;
     }
 
     &:active {
-        color: rgba($white, 0.3);
+        opacity: 0.2;
     }
 }
+
 .logo__icon--mb {
     display: block;
 }

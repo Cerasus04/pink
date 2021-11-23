@@ -7,15 +7,26 @@
     font-weight: 700;
     line-height: 18px;
     text-align: center;
-    color: $white;
-    border: 3px solid $white;
     box-sizing: border-box;
     background: transparent;
     border-radius: 29px;
 }
+.button-link--download {
+    color: $white;
+    border: 3px solid $white;
 
+    &:hover {
+      color: $pink;
+      background-color: $white;
+    }
+
+    &:active {
+      color: rgba($pink, 0.3);
+      background-color: $white;
+    }
+}
 @media(min-width: $tablet-width) {
-    .button {
+    .button-link {
         width: 300px;
     }
 }
