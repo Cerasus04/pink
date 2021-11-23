@@ -29,6 +29,12 @@
 
 @media(min-width: $desktop-width) {
     .nav-list {
+        &--close {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
     }
     .nav-list__item {
         // margin-right: 79px;
