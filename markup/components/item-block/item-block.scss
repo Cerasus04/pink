@@ -1,61 +1,61 @@
-.item-block {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
-.item-block__wrap {
-    position: relative;
-}
-.item-block__count {
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-weight: 700;
-    color: $main-light;
-}
-.item-block__img {
-    width: 100%;
-    object-fit: contain;
-    border-radius: 10px 10px 0 0;
-}
+// .item-block {
+//     display: flex;
+//     flex-direction: column;
+//     box-sizing: border-box;
+// }
+// .item-block__wrap {
+//     position: relative;
+// }
+// .item-block__count {
+//     position: absolute;
+//     top: 10px;
+//     right: 25px;
+//     font-weight: 700;
+//     color: $main-light;
+// }
+// .item-block__img {
+//     width: 100%;
+//     object-fit: contain;
+//     border-radius: 10px 10px 0 0;
+// }
 
-.item-block__title {
-    padding: 16px 16px 7px;
-    margin: 0;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
-    letter-spacing: 0em;
-    text-align: left;
+// .item-block__title {
+//     padding: 16px 16px 7px;
+//     margin: 0;
+//     font-size: 24px;
+//     font-style: normal;
+//     font-weight: 700;
+//     line-height: 32px;
+//     letter-spacing: 0em;
+//     text-align: left;
 
-}
+// }
 
-.item-block__text {
-    padding: 0 16px 16px;
-}
+// .item-block__text {
+//     padding: 0 16px 16px;
+// }
 
-.item-block__bottom {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 16px 18px 16px;
-    color: $filter-amount;
-}
+// .item-block__bottom {
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 0 16px 18px 16px;
+//     color: $filter-amount;
+// }
 
-.item-block__data {
+// .item-block__data {
 
-}
+// }
 
-.item-block__link {
-    position: relative;
-    display: block;
-    padding-right: 25px;
+// .item-block__link {
+//     position: relative;
+//     display: block;
+//     padding-right: 25px;
 
-    &::after {
-        @include bg-svg($arrow-right-brown);
-        content: '';
-        position: absolute;
-        top: 5px;
-        right: 0;
-    }
-}
+//     &::after {
+//         @include bg-svg($arrow-right-brown);
+//         content: '';
+//         position: absolute;
+//         top: 5px;
+//         right: 0;
+//     }
+// }

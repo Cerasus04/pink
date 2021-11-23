@@ -1,8 +1,8 @@
 mixin item-block(data)
     .item-block&attributes(attributes)
         .picture
-            each item in data.sourse
-                sourse(media=item.media srcset=item.srcset)
+            //- each item in data.sourse
+            //-     sourse(media=item.media srcset=item.srcset)
             img(class='item-block__img' src=data.src srcset=data.srcset width=data.width height=data.height alt=data.alt)
         p.item-block__text-wrap
             span.item-block__name #{data.name}

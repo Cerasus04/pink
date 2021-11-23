@@ -20,20 +20,20 @@ append section
                 ])
 
     .container
-        .grid.row-gap-20.column-gap-20
-            +item-block([
+        .grid.grid--middle.row-gap-20.column-gap
+            +item-block(
                 {
                     sourse: [
                         {
                             'media' : '(min-width: 960px)',
-                            'srcset' : '%=static=%content/photo-car-desktop@1x.jpg, %=static=%content/photo-car-desktop@2x.jpg 2x'
+                            'srcset' : '%=static=%img/content/photo-car-desktop@1x.jpg, %=static=%img/content/photo-car-desktop@2x.jpg 2x'
                         },{
                             'media' : '(min-width: 660px)',
-                            'srcset' : '%=static=%content/photo-car-tablet@1x.jpg, %=static=%content/photo-car-tablet@2x.jpg 2x'
+                            'srcset' : '%=static=%img/content/photo-car-tablet@1x.jpg, %=static=%img/content/photo-car-tablet@2x.jpg 2x'
                         }
                     ],
-                    src: '%=static=%content/photo-car-mobile@1x.jpg',
-                    srcset: '%=static=%content/photo-car-mobile@2x.jpg 2x',
+                    src: '%=static=%img/content/photo-car-mobile@1x.jpg',
+                    srcset: '%=static=%img/content/photo-car-mobile@2x.jpg 2x',
                     width: '280',
                     height: '180',
                     name: 'Левон',
@@ -42,20 +42,20 @@ append section
                     like: '356',
                     likeActive: true
                 }
-            ])(class='grid__col-12 grid__col-md-6 rgid__col-xl-4')
-            +item-block([
+            )(class='grid__col-12 grid__col-md-6 rgid__col-xl-4')
+            +item-block(
                 {
                     sourse: [
                         {
                             'media' : '(min-width: 960px)',
-                            'srcset' : '%=static=%content/photo-drumset-desktop@1x.jpg, %=static=%content/photo-drumset-desktop@2x.jpg 2x'
+                            'srcset' : '%=static=%img/content/photo-drumset-desktop@1x.jpg, %=static=%img/content/photo-drumset-desktop@2x.jpg 2x'
                         },{
                             'media' : '(min-width: 660px)',
-                            'srcset' : '%=static=%content/photo-drumset-tablet@1x.jpg, %=static=%content/photo-drumset-tablet@2x.jpg 2x'
+                            'srcset' : '%=static=%img/content/photo-drumset-tablet@1x.jpg, %=static=%img/content/photo-drumset-tablet@2x.jpg 2x'
                         }
                     ],
-                    src: '%=static=%content/photo-drumset-mobile@1x.jpg',
-                    srcset: '%=static=%content/photo-drumset-mobile@2x.jpg 2x',
+                    src: '%=static=%img/content/photo-drumset-mobile@1x.jpg',
+                    srcset: '%=static=%img/content/photo-drumset-mobile@2x.jpg 2x',
                     width: '280',
                     height: '180',
                     name: 'Антон',
@@ -63,20 +63,20 @@ append section
                     text: 'Соседи будут рады!',
                     like: '666'
                 }
-            ])(class='grid__col-12 grid__col-md-6 rgid__col-xl-4')
-            +item-block([
+            )(class='grid__col-12 grid__col-md-6 rgid__col-xl-4')
+            +item-block(
                 {
                     sourse: [
                         {
                             'media' : '(min-width: 960px)',
-                            'srcset' : '%=static=%content/photo-window-desktop@1x.jpg, %=static=%content/photo-window-desktop@2x.jpg 2x'
+                            'srcset' : '%=static=%img/content/photo-window-desktop@1x.jpg, %=static=%img/content/photo-window-desktop@2x.jpg 2x'
                         },{
                             'media' : '(min-width: 660px)',
-                            'srcset' : '%=static=%content/photo-window-tablet@1x.jpg, %=static=%content/photo-window-tablet@2x.jpg 2x'
+                            'srcset' : '%=static=%img/content/photo-window-tablet@1x.jpg, %=static=%img/content/photo-window-tablet@2x.jpg 2x'
                         }
                     ],
-                    src: '%=static=%content/photo-window-mobile@1x.jpg',
-                    srcset: '%=static=%content/photo-window-mobile@2x.jpg 2x',
+                    src: '%=static=%img/content/photo-window-mobile@1x.jpg',
+                    srcset: '%=static=%img/content/photo-window-mobile@2x.jpg 2x',
                     width: '280',
                     height: '180',
                     name: 'Борис',
@@ -84,20 +84,20 @@ append section
                     text: 'Здесь могла быть ваша цитата о высоком и вечном.',
                     like: '215'
                 }
-            ])(class='grid__col-12 grid__col-md-6 rgid__col-xl-4')
-            +item-block([
+            )(class='grid__col-12 grid__col-md-6 rgid__col-xl-4')
+            +item-block(
                 {
                     sourse: [
                         {
                             'media' : '(min-width: 960px)',
-                            'srcset' : '%=static=%content/photo-fair-desktop@1x.jpg, %=static=%content/photo-fair-desktop@2x.jpg 2x'
+                            'srcset' : '%=static=%img/content/photo-fair-desktop@1x.jpg, %=static=%img/content/photo-fair-desktop@2x.jpg 2x'
                         },{
                             'media' : '(min-width: 660px)',
-                            'srcset' : '%=static=%content/photo-fair-tablet@1x.jpg, %=static=%content/photo-fair-tablet@2x.jpg 2x'
+                            'srcset' : '%=static=%img/content/photo-fair-tablet@1x.jpg, %=static=%img/content/photo-fair-tablet@2x.jpg 2x'
                         }
                     ],
-                    src: '%=static=%content/photo-fair-mobile@1x.jpg',
-                    srcset: '%=static=%content/photo-fair-mobile@2x.jpg 2x',
+                    src: '%=static=%img/content/photo-fair-mobile@1x.jpg',
+                    srcset: '%=static=%img/content/photo-fair-mobile@2x.jpg 2x',
                     width: '280',
                     height: '180',
                     name: 'Сергей',
@@ -105,20 +105,20 @@ append section
                     text: 'Самая кубанская в мире!',
                     like: '4'
                 }
-            ])(class='grid__col-12 grid__col-md-6 rgid__col-xl-4')
-            +item-block([
+            )(class='grid__col-12 grid__col-md-6 rgid__col-xl-4')
+            +item-block(
                 {
                     sourse: [
                         {
                             'media' : '(min-width: 960px)',
-                            'srcset' : '%=static=%content/photo-pov-desktop@1x.jpg, %=static=%content/photo-pov-desktop@2x.jpg 2x'
+                            'srcset' : '%=static=%img/content/photo-pov-desktop@1x.jpg, %=static=%img/content/photo-pov-desktop@2x.jpg 2x'
                         },{
                             'media' : '(min-width: 660px)',
-                            'srcset' : '%=static=%content/photo-pov-tablet@1x.jpg, %=static=%content/photo-pov-tablet@2x.jpg 2x'
+                            'srcset' : '%=static=%img/content/photo-pov-tablet@1x.jpg, %=static=%img/content/photo-pov-tablet@2x.jpg 2x'
                         }
                     ],
-                    src: '%=static=%content/photo-pov-mobile@1x.jpg',
-                    srcset: '%=static=%content/photo-pov-mobile@2x.jpg 2x',
+                    src: '%=static=%img/content/photo-pov-mobile@1x.jpg',
+                    srcset: '%=static=%img/content/photo-pov-mobile@2x.jpg 2x',
                     width: '280',
                     height: '180',
                     name: 'Максим',
@@ -126,20 +126,20 @@ append section
                     text: 'Где снег-то?',
                     like: '150'
                 }
-            ])(class='grid__col-12 grid__col-md-6 rgid__col-xl-4')
-            +item-block([
+            )(class='grid__col-12 grid__col-md-6 rgid__col-xl-4')
+            +item-block(
                 {
                     sourse: [
                         {
                             'media' : '(min-width: 960px)',
-                            'srcset' : '%=static=%content/photo-wing-desktop@1x.jpg, %=static=%content/photo-wing-desktop@2x.jpg 2x'
+                            'srcset' : '%=static=%img/content/photo-wing-desktop@1x.jpg, %=static=%img/content/photo-wing-desktop@2x.jpg 2x'
                         },{
                             'media' : '(min-width: 660px)',
-                            'srcset' : '%=static=%content/photo-wing-tablet@1x.jpg, %=static=%content/photo-wing-tablet@2x.jpg 2x'
+                            'srcset' : '%=static=%img/content/photo-wing-tablet@1x.jpg, %=static=%img/content/photo-wing-tablet@2x.jpg 2x'
                         }
                     ],
-                    src: '%=static=%content/photo-wing-mobile@1x.jpg',
-                    srcset: '%=static=%content/photo-wing-mobile@2x.jpg 2x',
+                    src: '%=static=%img/content/photo-wing-mobile@1x.jpg',
+                    srcset: '%=static=%img/content/photo-wing-mobile@2x.jpg 2x',
                     width: '280',
                     height: '180',
                     name: 'Надежда',
@@ -147,5 +147,5 @@ append section
                     text: 'Всем GM и взаимные лайки!',
                     like: '2560'
                 }
-            ])(class='grid__col-12 grid__col-md-6 rgid__col-xl-4')
+            )(class='grid__col-12 grid__col-md-6 rgid__col-xl-4')
 
