@@ -2,6 +2,7 @@
     display: block;
     width: 280px;
     margin: 0 auto;
+    padding: 100px 0 0;
     box-sizing: border-box;
     border-collapse: collapse;
     border-spacing: 0;
@@ -12,8 +13,8 @@
     box-sizing: border-box;
     min-width: 279px;
     max-height: 94px;
-    // padding-top: 15px;
-    // padding-bottom: 22px;
+    padding-top: 15px;
+    padding-bottom: 22px;
     color: $white;
     background-color: $blue-dark;
     border-left: 2px solid $grey-light;

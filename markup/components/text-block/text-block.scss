@@ -1,3 +1,7 @@
+.text-block {
+    padding-top: 64px;
+}
+
 .text-block--img {
     position: relative;
 
@@ -28,7 +32,7 @@
 }
 .text-block__text {
     margin: 0;
-    // padding-bottom: 43px;
+    padding: 24px 0 43px;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -64,7 +68,7 @@
     .text-block--timer {
         position: relative;
         display: block;
-        margin-top: 54px;
+        min-height: 330px;
 
         &::before {
             @include bg-svg($icon-timer);
@@ -76,7 +80,6 @@
 
         & .text-block__title {
             margin: 0;
-            // padding-bottom: 27px;
             font-size: 30px;
             font-weight: 700;
             line-height: 36px;
@@ -100,7 +103,13 @@
     }
 }
 @media(min-width: $desktop-width) {
+    .text-block {
+        padding-top: 0;
+    }
     .text-block--timer {
+        background-color: $grey-light;
+        min-height: 429px;
+
         &::before {
             @include bg-svg($icon-timer-dt);
         }
@@ -145,7 +154,7 @@
         }
     }
     .text-block__title {
-        // padding-bottom: 35px;
+        padding: 35px 0 0;
         font-size: 30px;
         line-height: 30px;
         text-align: center;

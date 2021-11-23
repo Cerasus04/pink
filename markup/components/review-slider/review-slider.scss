@@ -1,6 +1,5 @@
 .slider {
     position: relative;
-    padding: 55px 0;
 }
 .slider__list {
     @include nl;
@@ -38,20 +37,20 @@
 }
 @media(min-width: $tablet-width) {
     .slider {
-        padding: 193px 0 40px;
+        padding: 110px 0 0;
 
         &::before {
             @include bg-svg($icon-comma);
             content: "";
             position: absolute;
-            top: 50px;
+            top: 0;
             right: 50%;
             background-repeat: no-repeat;
             transform: translateX(50%);
         }
     }
     .slider__author-wrap {
-        // padding-top: 50px;
+        padding-top: 50px;
         order: 1;
     }
     .slider__author-tb {

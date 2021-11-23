@@ -1,5 +1,4 @@
-.footer__container {
-
+.footer {
     padding: 40px 0;
 }
 
@@ -8,5 +7,14 @@
     font-size: 14px;
     line-height: 18px;
 }
-
+@media(min-width: $tablet-width) {
+    .footer {
+        padding: 36px 0;
+    }
+}
+@media(min-width: $desktop-width) {
+    .footer {
+        padding: 70px 0;
+    }
+}
 

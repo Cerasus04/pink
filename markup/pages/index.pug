@@ -15,8 +15,9 @@ append section
     .promo.promo--index
         .container
             .grid
-                .grid__col-12.grid__col-md-3.grid__col-xl-4
-                    +title-main({titleText: 'Взгляните на жизнь иначе!'})
+                .grid__col-12.grid__col-md-6.grid__col-xl-4
+                    .grid__col-md-8.grid__col-xl-12.offset-md-2.offset-xl-0
+                        +title-main({titleText: 'Взгляните на жизнь иначе!'})
                     +button-link({buttonDescr : 'Скачать приложение'})
                     +icon-list([
                         {mod : '1'},
@@ -25,10 +26,10 @@ append section
                     ])
 
     .container.grid.grid--column.grid--center
-        .grid__col-10.grid__col-md-12.grid__col-xl-10
+        .grid__col-10.grid__col-md-12.grid__col-xl-10.mt-example
             +title({titleText: 'Устали от серости мегаполиса?'})
             +title({titleText: 'Нам есть, что вам <br> предложить!'})
-    .bg-color
+    .bg-color.mt-example
         .container.grid.grid--column
             .grid__col-12
                 +text-block([
@@ -46,8 +47,8 @@ append section
                         text: 'Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых'
                     }
                 ])(class='text-block--img')
-    .grid
-        .container.grid__col-12
+    .grid.bg-color-xl
+        .container.grid__col-12.mt-example
             +text-block([
                 {
                     title : 'Эффект на 24 часа',
@@ -56,7 +57,7 @@ append section
                     href: '#'
                 }
             ])(class='text-block--timer')
-    .container.grid.grid--column
+    .container.grid.grid--column.mt-example
         .grid__col-12
             +review-slider([
                 {
@@ -82,7 +83,7 @@ append section
                         {selected: false}
                     ])(class='grid grid--between')
             +controls()
-    .bg-color.grid.grid--column
+    .bg-color.grid.grid--column.mt-example
         .grid__col-12
             +table({
                 'head' : [
@@ -148,9 +149,9 @@ append section
                         {selected: false},
                         {selected: false}
                     ])(class='grid grid--between')
-    .container
+    .container.mt-example
         +title({titleText: 'Остались вопросы? <br> Свяжитесь с нами!'})
-        .grid.grid--column.grid--row-md.grid--center-md
+        .grid.grid--column.grid--row-md.grid--center-md.mt-example
             +contacts(
                 {
                     link: true,
@@ -173,5 +174,5 @@ append section
                     span: 'ул. Большая <br> Конюшенная, 19/8',
                     current: 'address'
                 })
-    .grid
+    .grid.mt-example
         +map(map.defaults)

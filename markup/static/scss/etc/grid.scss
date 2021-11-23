@@ -15,12 +15,14 @@
         background-position: top left;
         background-size: 100% auto;
     }
-
 }
 .container {
     min-width: 280px;
     padding: 0 20px;
     margin: 0 auto;
+}
+.mt-example {
+    margin-top: 47px !important;
 }
 
 .grid {
@@ -176,6 +178,9 @@
 }
 
 @media(min-width: $tablet-width) {
+    .mt-example {
+        margin-top: 56px;
+    }
     .container {
         padding: 0 20px;
     }
@@ -322,6 +327,9 @@
 
 }
 @media(min-width: $desktop-width) {
+    .mt-example {
+        margin-top: 77px;
+    }
     .bg-color {
         &::before {
             width: 100%;
@@ -329,6 +337,10 @@
             background-size: 100% 100%;
         }
     }
+    .bg-color-xl {
+        background-color: $grey-light;
+    }
+
     .grid--column-xl {
         flex-direction: column;
     }
@@ -368,7 +380,7 @@
         padding: 0;
     }
 
-    col-xl-auto {
+    .grid__col-xl-auto {
         flex: 0 0 auto;
         width: auto;
     }

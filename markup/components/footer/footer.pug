@@ -48,8 +48,8 @@ mixin footer(data)
                     'width' : '15',
                     'height' : '13'
                 }
-            ])
-            a.grid.grid--between-md.grid--middle-md.footer__dev-link(href="#" target="_blank")
+            ])(class='social-list--footer')
+            a.grid.grid--between-md.grid--middle.footer__dev-link(href="#" target="_blank")
                 span.footer__dev-text Разработано
                 svg.footer__dev-icon(width="27", height="34")
                         use(xlink:href='%=static=%img/assets/footer/academy.svg#academy')

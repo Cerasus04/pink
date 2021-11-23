@@ -1,5 +1,5 @@
 mixin social(data)
-    .social-list
+    .social-list&attributes(attributes)
         each item in data
             a(class='social-list__link' href=item.href target="_blank" aria-label=item.ariaLabel)
                 svg(class='social-list__icon' width=item.width, height=item.height)
