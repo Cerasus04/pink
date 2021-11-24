@@ -2,10 +2,7 @@ include ../picture/picture.pug
 
 mixin item-block(data)
     .item-block&attributes(attributes)
-        picture
-            each item in data.sourse
-                source(media=item.media srcset=item.srcset)
-            img(class='item-block__img' src=data.src srcset=data.srcset width=data.width height=data.height alt=data.alt)
+        block
         .item-block__text-wrap
             .item-block__author-wrap
                 p.item-block__name #{data.name}

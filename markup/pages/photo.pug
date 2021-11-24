@@ -4,6 +4,7 @@ include ../components/title-main/title-main.pug
 include ../components/button-link/button-link.pug
 include ../components/text-block/text-block.pug
 include ../components/item-block/item-block.pug
+include ../components/picture/picture.pug
 include ../components/range/range.pug
 include ../components/constructor-btn/constructor-btn.pug
 
@@ -22,7 +23,14 @@ append section
                 ])
     +item-block(
             {
-                sourse: [
+                name: 'Анна ',
+                time: '(5 минут назад)',
+                text: 'Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!',
+                count: ' 215'
+            }
+        )(class='item-block--panorama')
+        +picture({
+                 source: [
                     {
                         'media' : '(min-width: 1024px)',
                         'srcset' : '%=static=%img/content/panorama-desktop@1x.jpg.jpg, %=static=%img/content/panorama-desktop@2x.jpg 2x'
@@ -32,20 +40,22 @@ append section
                     }
                 ],
                 src: '%=static=%img/content/panorama-mobile@1x.jpg',
-                srcset: '%=static=%img/content/panorama-mobile@2x.jpg 2x',
-
-                name: 'Анна ',
-                time: '(5 минут назад)',
-                text: 'Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!',
-                count: ' 215'
-            }
-        )(class='item-block--panorama')
+                srcset: '%=static=%img/content/panorama-mobile@2x.jpg 2x'
+        })
     .container.mt-20.mt-54-md
         .grid.row-gap-20
             .grid__col-12.grid__col-md-6.grid__col-xl-4
                 +item-block(
                     {
-                        sourse: [
+                        name: 'Левон ',
+                        time: '(5 часов назад)',
+                        text: 'Вчера он на луну летал, сегодня в руки к нам попал.',
+                        count: ' 356',
+                        countActive: true
+                    }
+                )
+                    +picture({
+                        source: [
                             {
                                 'media' : '(min-width: 1024px)',
                                 'srcset' : '%=static=%img/content/photo-car-desktop@1x.jpg, %=static=%img/content/photo-car-desktop@2x.jpg 2x'
@@ -56,18 +66,19 @@ append section
                         ],
                         src: '%=static=%img/content/photo-car-mobile@1x.jpg',
                         srcset: '%=static=%img/content/photo-car-mobile@2x.jpg 2x',
-
-                        name: 'Левон ',
-                        time: '(5 часов назад)',
-                        text: 'Вчера он на луну летал, сегодня в руки к нам попал.',
-                        count: ' 356',
-                        countActive: true
-                    }
-                )
+                    })
             .grid__col-12.grid__col-md-6.grid__col-xl-4
                 +item-block(
                     {
-                        sourse: [
+                        name: 'Антон ',
+                        time: '(12 часов назад)',
+                        text: 'Соседи будут рады!',
+                        count: ' 666',
+                        likeActive: true
+                    }
+                )
+                    +picture({
+                        source: [
                             {
                                 'media' : '(min-width: 1024px)',
                                 'srcset' : '%=static=%img/content/photo-drumset-desktop@1x.jpg, %=static=%img/content/photo-drumset-desktop@2x.jpg 2x'
@@ -78,18 +89,18 @@ append section
                         ],
                         src: '%=static=%img/content/photo-drumset-mobile@1x.jpg',
                         srcset: '%=static=%img/content/photo-drumset-mobile@2x.jpg 2x',
-
-                        name: 'Антон ',
-                        time: '(12 часов назад)',
-                        text: 'Соседи будут рады!',
-                        count: ' 666',
-                        likeActive: true
-                    }
-                )
+                    })
             .grid__col-12.grid__col-md-6.grid__col-xl-4
                 +item-block(
                     {
-                        sourse: [
+                        name: 'Борис ',
+                        time: '(20 часов назад)',
+                        text: 'Здесь могла быть ваша цитата о высоком и вечном.',
+                        count: ' 215'
+                    }
+                )
+                    +picture({
+                        source: [
                             {
                                 'media' : '(min-width: 1024px)',
                                 'srcset' : '%=static=%img/content/photo-window-desktop@1x.jpg, %=static=%img/content/photo-window-desktop@2x.jpg 2x'
@@ -100,38 +111,40 @@ append section
                         ],
                         src: '%=static=%img/content/photo-window-mobile@1x.jpg',
                         srcset: '%=static=%img/content/photo-window-mobile@2x.jpg 2x',
-
-                        name: 'Борис ',
-                        time: '(20 часов назад)',
-                        text: 'Здесь могла быть ваша цитата о высоком и вечном.',
-                        count: ' 215'
-                    }
-                )
-            .grid__col-12.grid__col-md-6.grid__col-xl-4
-                +item-block(
-                {
-                    sourse: [
-                        {
-                            'media' : '(min-width: 1024px)',
-                            'srcset' : '%=static=%img/content/photo-fair-desktop@1x.jpg, %=static=%img/content/photo-fair-desktop@2x.jpg 2x'
-                        },{
-                            'media' : '(min-width: 660px)',
-                            'srcset' : '%=static=%img/content/photo-fair-tablet@1x.jpg, %=static=%img/content/photo-fair-tablet@2x.jpg 2x'
-                        }
-                    ],
-                    src: '%=static=%img/content/photo-fair-mobile@1x.jpg',
-                    srcset: '%=static=%img/content/photo-fair-mobile@2x.jpg 2x',
-
-                    name: 'Сергей ',
-                    time: '(25 часов назад)',
-                    text: 'Самая кубанская в мире!',
-                    count: ' 4'
-                }
-            )
+                    })
             .grid__col-12.grid__col-md-6.grid__col-xl-4
                 +item-block(
                     {
-                        sourse: [
+                        name: 'Сергей ',
+                        time: '(25 часов назад)',
+                        text: 'Самая кубанская в мире!',
+                        count: ' 4'
+                    }
+                )
+                    +picture({
+                        source: [
+                            {
+                                'media' : '(min-width: 1024px)',
+                                'srcset' : '%=static=%img/content/photo-fair-desktop@1x.jpg, %=static=%img/content/photo-fair-desktop@2x.jpg 2x'
+                            },{
+                                'media' : '(min-width: 660px)',
+                                'srcset' : '%=static=%img/content/photo-fair-tablet@1x.jpg, %=static=%img/content/photo-fair-tablet@2x.jpg 2x'
+                            }
+                        ],
+                        src: '%=static=%img/content/photo-fair-mobile@1x.jpg',
+                        srcset: '%=static=%img/content/photo-fair-mobile@2x.jpg 2x',
+                    })
+            .grid__col-12.grid__col-md-6.grid__col-xl-4
+                +item-block(
+                    {
+                        name: 'Максим ',
+                        time: '(40 часов назад)',
+                        text: 'Где снег-то?',
+                        count: ' 150'
+                    }
+                )
+                    +picture({
+                        source: [
                             {
                                 'media' : '(min-width: 1024px)',
                                 'srcset' : '%=static=%img/content/photo-pov-desktop@1x.jpg, %=static=%img/content/photo-pov-desktop@2x.jpg 2x'
@@ -142,17 +155,18 @@ append section
                         ],
                         src: '%=static=%img/content/photo-pov-mobile@1x.jpg',
                         srcset: '%=static=%img/content/photo-pov-mobile@2x.jpg 2x',
-
-                        name: 'Максим ',
-                        time: '(40 часов назад)',
-                        text: 'Где снег-то?',
-                        count: ' 150'
-                    }
-                )
+                    })
             .grid__col-12.grid__col-md-6.grid__col-xl-4
                 +item-block(
                     {
-                        sourse: [
+                        name: 'Надежда ',
+                        time: '(40 часов назад)',
+                        text: 'Всем GM и взаимные лайки!',
+                        count: ' 2560'
+                    }
+                )
+                    +picture({
+                        source: [
                             {
                                 'media' : '(min-width: 1024px)',
                                 'srcset' : '%=static=%img/content/photo-wing-desktop@1x.jpg, %=static=%img/content/photo-wing-desktop@2x.jpg 2x'
@@ -163,13 +177,7 @@ append section
                         ],
                         src: '%=static=%img/content/photo-wing-mobile@1x.jpg',
                         srcset: '%=static=%img/content/photo-wing-mobile@2x.jpg 2x',
-
-                        name: 'Надежда ',
-                        time: '(40 часов назад)',
-                        text: 'Всем GM и взаимные лайки!',
-                        count: ' 2560'
-                    }
-                )
+                    })
     .bg-color
         .container
             form.grid.grid--column.grid--row-md.grid--between-md
