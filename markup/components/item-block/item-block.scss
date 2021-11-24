@@ -1,72 +1,66 @@
-// .item-block {
-//     display: flex;
-//     flex-direction: column;
-//     box-sizing: border-box;
-// }
-// .item-block__wrap {
-//     position: relative;
-// }
-// .item-block__count {
-//     position: absolute;
-//     top: 10px;
-//     right: 25px;
-//     font-weight: 700;
-//     color: $main-light;
-// }
-// .item-block__img {
-//     width: 100%;
-//     object-fit: contain;
-//     border-radius: 10px 10px 0 0;
-// }
-
-// .item-block__title {
-//     padding: 16px 16px 7px;
-//     margin: 0;
-//     font-size: 24px;
-//     font-style: normal;
-//     font-weight: 700;
-//     line-height: 32px;
-//     letter-spacing: 0em;
-//     text-align: left;
-
-// }
-
-.item-block__text {
-    max-width: 246px;
-
+.item-block {
+    display: grid;
+    width: 100%;
+    min-height: 323px;
+    background-color: $grey-light;
+    grid-template-rows: 180px 1fr 1fr;
 }
-
-// .item-block__bottom {
-//     display: flex;
-//     justify-content: space-between;
-//     padding: 0 16px 18px 16px;
-//     color: $filter-amount;
-// }
-
-// .item-block__data {
-
-// }
-
-// .item-block__link {
-//     position: relative;
-//     display: block;
-//     padding-right: 25px;
-
-//     &::after {
-//         @include bg-svg($arrow-right-brown);
-//         content: '';
-//         position: absolute;
-//         top: 5px;
-//         right: 0;
-//     }
-// }
+.item-block__img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    line-height: 0;
+}
+.item-block__text-wrap {
+}
+.item-block__name {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+.item-block__time {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.item-block__text {
+    margin: 0;
+    padding: 0;
+}
+.item-block__like-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 14px 0;
+    padding: 0;
+    font-size: 12px;
+    color: $pink;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+}
+.item-block__like-btn {
+    width: 13px;
+    height: 12px;
+    border: 0;
+    background: transparent;
+    background-image: url("%=static=%assets/item-block/icon-heart.svg");
+    background-repeat: no-repeat;
+}
+.item-block__like-count {
+}
+.item-block__link--active {
+}
 @media(min-width: $tablet-width) {
-    .item-block__text {
-        max-width: 232px;
+    .item-block {
+        width: 96%;
+        margin: 0 auto;
+        grid-template-rows: 300px 1fr 1fr;
     }
 }
 @media(min-width: $desktop-width) {
-    .item-block__text {
-        max-width: 246px;
+    .item-block {
+        width: 95%;
+        grid-template-rows: 400px 1fr 1fr;
     }
 }
