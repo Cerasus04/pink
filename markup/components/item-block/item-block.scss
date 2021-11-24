@@ -31,9 +31,10 @@
 
 // }
 
-// .item-block__text {
-//     padding: 0 16px 16px;
-// }
+.item-block__text {
+    max-width: 246px;
+
+}
 
 // .item-block__bottom {
 //     display: flex;
@@ -59,3 +60,13 @@
 //         right: 0;
 //     }
 // }
+@media(min-width: $tablet-width) {
+    .item-block__text {
+        max-width: 232px;
+    }
+}
+@media(min-width: $desktop-width) {
+    .item-block__text {
+        max-width: 246px;
+    }
+}

@@ -249,6 +249,10 @@
     .grid--evenly-md {
         justify-content: space-evenly;
     }
+    .grid__col-md-auto {
+        flex: 0 0 auto;
+        width: auto;
+    }
     .grid__col-md-1 {
         flex: 0 0 auto;
         width: 8.33333333%;
@@ -423,7 +427,10 @@
         max-width: 1200px;
         padding: 0;
     }
-
+    .grid__col-xl-auto {
+        flex: 0 0 auto;
+        width: auto;
+    }
     .grid__col-xl-auto {
         flex: 0 0 auto;
         width: auto;
