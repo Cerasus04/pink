@@ -1,4 +1,7 @@
 .bg-color {
+    background-color: $grey-light;
+}
+.bg-color-tr {
     position: relative;
     background-color: $grey-light;
 
@@ -16,6 +19,7 @@
         background-size: 100% auto;
     }
 }
+
 .container {
     min-width: 280px;
     padding: 0 20px;
@@ -201,6 +205,11 @@
 }
 
 @media(min-width: $tablet-width) {
+    .bg-color-tr {
+        &::before {
+            height: 20%;
+        }
+    }
     .mt-example {
         margin-top: 56px;
     }
@@ -366,6 +375,11 @@
 
 }
 @media(min-width: $desktop-width) {
+    .bg-color-tr {
+        &::before {
+            height: 30%;
+        }
+    }
     .mt-example {
         margin-top: 77px;
     }
@@ -388,10 +402,6 @@
             background-size: 100% 100%;
         }
     }
-    .bg-color-xl {
-        background-color: $grey-light;
-    }
-
     .grid--column-xl {
         flex-direction: column;
     }

@@ -1,0 +1,7 @@
+mixin range(data)
+    .range
+        each range in data
+            div(class='range__item range__item--' + range.name id=range.name)(class=range.active ? '.range__item--active' : '')
+                .range__bar
+                .range__toggle.range__toggle--grey(id=range.toggleId)
+            input.visually-hidden(id=range.rangeValue type="text" value=range.value name=range.rangeValue)

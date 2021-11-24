@@ -1,0 +1,20 @@
+mixin form-form-constructor(data)
+    form.form-constructor-form(action="https://echo.htmlacademy.ru" method="POST")&attributes(attributes)
+        picture
+            each item in data.sourse
+                source(media=item.media srcset=item.srcset)
+            img(class='item-block__img' src=data.src srcset=data.srcset width=data.width height=data.height alt=data.alt)
+            .form-constructor__controls
+                .form-constructor__filters
+                    .form-constructor__buttons-list
+                        each btnItem in data.btn
+                            button(type='button' class='form-constructor__button form-constructor__button--' + btnItem.name name=btnItem.name aria-label=btnItme.label)(class=btnItem.active ? 'form-constructor__button--active' : '')
+                    .form-constructor__ranges-list
+                        each range in data.range
+                            div(class='form-constructor__ranges-item form-constructor__ranges-item--' + range.name id=range.name)(class=range.active ? 'form-constructor__ranges-item--active' : '')
+                                .range__bar
+                                .range__toggle.range__toggle--grey(id=range.toggleId)
+                            input.visually-hidden(id=range.rangeValue type="text" value=range.value name=range.rangeValue)
+                    .form-constructor__wrapper-buttons
+                        button.form-constructor__btn-upload(type='submit') Запостить
+                        button.form-constructor__btn-reset(type='reset') Отмена
