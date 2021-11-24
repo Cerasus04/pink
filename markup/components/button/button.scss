@@ -1,13 +1,36 @@
 .button {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+    padding: 21px 34px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    box-sizing: border-box;
+    background: transparent;
+    border-radius: 29px;
+}
+.button--download {
+    margin-top: 350px;
+    color: $white;
+    border: 3px solid $white;
 
+    &:hover {
+      color: $pink;
+      background-color: $white;
+    }
+
+    &:active {
+      color: rgba($pink, 0.3);
+      background-color: $white;
+    }
 }
 @media(min-width: $tablet-width) {
     .button {
-
+        width: 300px;
     }
-}
-@media(min-width: $desktop-width) {
-    .button {
-
+    .button--download {
+        margin-top: 0;
     }
 }

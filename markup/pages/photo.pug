@@ -1,12 +1,14 @@
 extends _template.pug
 include ../components/title/title.pug
 include ../components/title-main/title-main.pug
-include ../components/button-link/button-link.pug
+include ../components/button/button.pug
+include ../components/button/button.pug
 include ../components/text-block/text-block.pug
 include ../components/item-block/item-block.pug
 include ../components/picture/picture.pug
 include ../components/range/range.pug
 include ../components/constructor-btn/constructor-btn.pug
+include ../components/button/button.pug
 
 
 append section
@@ -180,8 +182,58 @@ append section
                     })
     .bg-color
         .container
-            form.grid.grid--column.grid--row-md.grid--between-md
+            form.grid.grid--column.grid--row-md.grid--between-md(action="https://echo.htmlacademy.ru" method="POST")
                 .grid__col-12.grid__col-md-6.grid__col-xl-5
+                    +picture({
+                        source: [
+                            {
+                                'media' : '(min-width: 1024px)',
+                                'srcset' : '%=static=%img/content/photo-road-desktop@1x.jpg, %=static=%img/content/photo-road-desktop@2x.jpg 2x'
+                            },{
+                                'media' : '(min-width: 660px)',
+                                'srcset' : '%=static=%img/content/photo-road-tablet@1x.jpg, %=static=%img/content/photo-road-tablet@2x.jpg 2x'
+                            }
+                        ],
+                        src: '%=static=%img/content/photo-road-mobile@1x.jpg',
+                        srcset: '%=static=%img/content/photo-road-mobile@2x.jpg 2x',
+                    })
                 .grid__col-12.grid__col-md-5.grid__col-xl-5
+                    +constructor-btn([
+                        {
+                            name: 'crop',
+                            label: 'Обрезать изображение',
+                            active: true
+
+                        },{
+                            name: 'fill',
+                            label: 'Залить изображение',
+                        },{
+                            name: 'contrast',
+                            label: 'Контрастность изображения',
+                        }
+                    ])
+                    +range([
+                        {
+                            name: 'crop',
+                            active: true,
+                            toggleId: 'toggle-crop',
+                            rangeValue: 'value-crop',
+                            value: '80'
+                        },{
+                            name: 'fill',
+                            toggleId: 'toggle-fill',
+                            rangeValue: 'value-fill',
+                            value: '50'
+                        },{
+                            name: 'contrast',
+                            toggleId: 'toggle-contrast',
+                            rangeValue: 'value-contrast',
+                            value: '20'
+                        }
+                    ])
+                    +button({button : 'Запостить', type : 'submit'})(class='button--upload')
+                    +button({button : 'Отмена', type : 'reset'})(class='button--upload')
+
+
 
 

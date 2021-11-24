@@ -1,7 +1,7 @@
 extends _template.pug
 include ../components/title/title.pug
 include ../components/title-main/title-main.pug
-include ../components/button-link/button-link.pug
+include ../components/button/button.pug
 include ../components/icon-list/icon-list.pug
 include ../components/text-block/text-block.pug
 include ../components/review-slider/review-slider.pug
@@ -18,7 +18,7 @@ append section
                 .grid__col-12.grid__col-md-6.grid__col-xl-4
                     .grid__col-md-8.grid__col-xl-12.offset-md-2.offset-xl-0
                         +title-main({titleText: 'Взгляните на жизнь иначе!'})
-                    +button-link({buttonDescr : 'Скачать приложение'})(class='button-link--download')
+                    +button({button : 'Скачать приложение', type: 'button'})(class='button--download')
                     +icon-list([
                         {mod : '1'},
                         {mod: '2'},
