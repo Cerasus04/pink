@@ -1,8 +1,8 @@
 mixin item-block(data)
     .item-block&attributes(attributes)
-        .picture
-            //- each item in data.sourse
-            //-     sourse(media=item.media srcset=item.srcset)
+        picture
+            each item in data.sourse
+                source(media=item.media srcset=item.srcset)
             img(class='item-block__img' src=data.src srcset=data.srcset width=data.width height=data.height alt=data.alt)
         p.item-block__text-wrap
             span.item-block__name #{data.name}
@@ -11,4 +11,4 @@ mixin item-block(data)
         div.item-block__like-wrap
             span.item-block__like Нравится:
                 span.item-block__like-count #{data.count}
-            button.item-block__like(type='button' class=data.likeActive ? 'item-block__link--active' : '')
+            button.item-block__like-btn(type='button' class=data.likeActive ? 'item-block__link--active' : '')
