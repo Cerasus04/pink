@@ -1,9 +1,49 @@
 .item-block {
     display: grid;
     width: 100%;
+    height: 100%;
     min-height: 323px;
     background-color: $grey-light;
     grid-template-rows: 180px auto;
+}
+
+.item-block--panorama {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    line-height: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: unset;
+
+    &::before {
+        content: "Панорама дня";
+        position: absolute;
+        top: 0;
+        right: 20px;
+        width: 140px;
+        height: 36px;
+        margin: 0;
+        padding: 7px 5px;
+        z-index: 1;
+        box-sizing: border-box;
+        background-color: $pink;
+        text-transform: uppercase;
+        color: $white;
+        font-size: 12px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 24px;
+        letter-spacing: normal;
+        text-align: center;
+    }
+    .item-block__text-wrap {
+        margin: 0 20px;
+        background-color: $grey-light;
+
+    }
 }
 .item-block__img {
     grid-row: 1 / 2;
@@ -16,7 +56,15 @@
   height: 100%;
   object-fit: cover;
 }
+.item-block__author-wrap {
+    margin: 0;
+}
 .item-block__text-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 17px;
+
 }
 .item-block__name {
     margin: 0;
@@ -25,16 +73,18 @@
 }
 .item-block__time {
     font-size: 12px;
+    font-weight: 400;
     text-transform: uppercase;
 }
 .item-block__text {
     margin: 0;
-    padding: 0;
+    padding: 14px 0 27px;
+    line-height: 24px;
 }
 .item-block__like-wrap {
     display: flex;
     justify-content: space-between;
-    margin: 14px 0;
+    margin: 0;
     padding: 0;
     font-size: 12px;
     color: $pink;
@@ -52,7 +102,8 @@
 }
 .item-block__like-count {
 }
-.item-block__link--active {
+.item-block__like-btn--active {
+    background-image: url("%=static=%assets/item-block/icon-heart-active.svg");
 }
 @media(min-width: $tablet-width) {
     .item-block {
@@ -60,10 +111,26 @@
         margin: 0 auto;
         grid-template-rows: 300px auto;
     }
+    .item-block--panorama {
+        width: 100% !important;
+    }
+    .item-block__text-wrap {
+        padding: 30px;
+    }
 }
 @media(min-width: $desktop-width) {
     .item-block {
         width: 95%;
         grid-template-rows: 400px auto;
+    }
+    .item-block--panorama {
+        & .item-block__text-wrap {
+            width: calc(100% - 260px);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    }
+    .item-block__text-wrap {
+        padding: 31px 27px;
     }
 }
