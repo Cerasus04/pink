@@ -21,62 +21,62 @@
 }
 
 .constructor-btn--crop {
-    background-image: url("%=static=%img/assets/constructio-btn/icon-editor-crop.svg");
+    background-image: url("%=static=%assets/constructor-btn/icon-editor-crop.svg");
     background-position: center;
     background-size: 48px 48px;
 
     &:hover {
-        background-image: url("%=static=%img/assets/constructio-btn/icon-editor-crop.svg");
+        background-image: url("%=static=%assets/constructor-btn/icon-editor-crop.svg");
     }
 
     &:active,
     &:focus {
-        background-image: url("%=static=%img/assets/constructio-btn/icon-editor-crop-active.svg");
+        background-image: url("%=static=%assets/constructor-btn/icon-editor-crop-active.svg");
     }
 }
 
 .constructor-btn--fill {
-    background-image: url("%=static=%img/assets/constructio-btn/icon-editor-fill.svg");
+    background-image: url("%=static=%assets/constructor-btn/icon-editor-fill.svg");
     background-position: center;
     background-size: 48px 48px;
 
     &:hover {
-        background-image: url("%=static=%img/assets/constructio-btn/icon-editor-fill.svg");
+        background-image: url("%=static=%assets/constructor-btn/icon-editor-fill.svg");
     }
 
     &:active,
     &:focus {
-        background-image: url("%=static=%img/assets/constructio-btn/icon-editor-fill-active.svg");
+        background-image: url("%=static=%assets/constructor-btn/icon-editor-fill-active.svg");
     }
 }
 
 .constructor-btn--contrast {
-    background-image: url("%=static=%img/assets/constructio-btn/icon-editor-contrast.svg");
+    background-image: url("%=static=%assets/constructor-btn/icon-editor-contrast.svg");
     background-position: center;
     background-size: 32px 32px;
 
     &:hover {
-        background-image: url("%=static=%img/assets/constructio-btn/icon-editor-contrast.svg");
+        background-image: url("%=static=%assets/constructor-btn/icon-editor-contrast.svg");
     }
 
     &:active,
     &:focus {
-        background-image: url("%=static=%img/assets/constructio-btn/icon-editor-contrast-active.svg");
+        background-image: url("%=static=%assets/constructor-btn/icon-editor-contrast-active.svg");
     }
 }
 
-.constructor-btn--active.constructor-btn--crop {
-    background-image: url("%=static=%img/assets/constructio-btn/icon-editor-crop-active.svg");
+.constructor-btn--is-active.constructor-btn--crop {
+    background-image: url("%=static=%assets/constructor-btn/icon-editor-crop-active.svg");
     opacity: 1;
 }
 
-.constructor-btn--active.constructor-btn--fill {
-    background-image: url("%=static=%img/assets/constructio-btn/icon-editor-fill-active.svg");
+.constructor-btn--is-active.constructor-btn--fill {
+    background-image: url("%=static=%assets/constructor-btn/icon-editor-fill-active.svg");
     opacity: 1;
 }
 
-.constructor-btn--active.constructor-btn--contrast {
-    background-image: url("%=static=%img/assets/constructio-btn/icon-editor-contrast-active.svg");
+.constructor-btn--is-active.constructor-btn--contrast {
+    background-image: url("%=static=%assets/constructor-btn/icon-editor-contrast-active.svg");
     opacity: 1;
 }
 @media(min-width: $tablet-width) {
@@ -89,19 +89,19 @@
     }
 
     .constructor-btn--crop {
-        background-image: url("%=static=%img/assets/constructio-btn/icon-editor-crop-active.svg");
+        background-image: url("%=static=%assets/constructor-btn/icon-editor-crop-active.svg");
         background-size: 24px 24px;
         background-position: bottom 3px left 3px;
     }
 
     .constructor-btn--fill {
-        background-image: url("%=static=%img/assets/constructio-btn/icon-editor-fill-active.svg");
+        background-image: url("%=static=%assets/constructor-btn/icon-editor-fill-active.svg");
         background-size: 24px 24px;
         background-position: top 3px left 3px;
     }
 
     .constructor-btn--contrast {
-        background-image: url("%=static=%img/assets/constructio-btn/icon-editor-contrast-active.svg");
+        background-image: url("%=static=%assets/constructor-btn/icon-editor-contrast-active.svg");
         background-size: 16px 16px;
         background-position: bottom right;
     }
@@ -114,19 +114,19 @@
     }
 
     .constructor-btn--crop {
-        background-image: url("%=static=%img/assets/constructio-btn/icon-editor-crop-active.svg");
+        background-image: url("%=static=%assets/constructor-btn/icon-editor-crop-active.svg");
         background-position: center;
         background-size: 48px 48px;
     }
 
     .constructor-btn--fill {
-        background-image: url("%=static=%img/assets/constructio-btn/icon-editor-fill-active.svg");
+        background-image: url("%=static=%assets/constructor-btn/icon-editor-fill-active.svg");
         background-position: center;
         background-size: 48px 48px;
     }
 
     .constructor-btn--contrast {
-        background-image: url("%=static=%img/assets/constructio-btn/icon-editor-contrast-active.svg");
+        background-image: url("%=static=%assets/constructor-btn/icon-editor-contrast-active.svg");
         background-position: center;
         background-size: 32px 32px;
     }

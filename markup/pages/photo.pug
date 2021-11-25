@@ -10,7 +10,6 @@ include ../components/range/range.pug
 include ../components/constructor-btn/constructor-btn.pug
 include ../components/button/button.pug
 
-
 append section
     .promo
         .container
@@ -35,7 +34,7 @@ append section
                  source: [
                     {
                         'media' : '(min-width: 1024px)',
-                        'srcset' : '%=static=%img/content/panorama-desktop@1x.jpg.jpg, %=static=%img/content/panorama-desktop@2x.jpg 2x'
+                        'srcset' : '%=static=%img/content/panorama-desktop@1x.jpg, %=static=%img/content/panorama-desktop@2x.jpg 2x'
                     },{
                         'media' : '(min-width: 660px)',
                         'srcset' : '%=static=%img/content/panorama-tablet@1x.jpg, %=static=%img/content/panorama-tablet@2x.jpg 2x'
@@ -180,9 +179,9 @@ append section
                         src: '%=static=%img/content/photo-wing-mobile@1x.jpg',
                         srcset: '%=static=%img/content/photo-wing-mobile@2x.jpg 2x',
                     })
-    .bg-color
+    .bg-color.mt-example
         .container
-            form.grid.grid--column.grid--row-md.grid--between-md(action="https://echo.htmlacademy.ru" method="POST")
+            form.grid.grid--column.grid--row-md.grid--between-md.p-20(action="https://echo.htmlacademy.ru" method="POST")
                 .grid__col-12.grid__col-md-6.grid__col-xl-5
                     +picture({
                         source: [
@@ -197,42 +196,56 @@ append section
                         src: '%=static=%img/content/photo-road-mobile@1x.jpg',
                         srcset: '%=static=%img/content/photo-road-mobile@2x.jpg 2x',
                     })
-                .grid__col-12.grid__col-md-5.grid__col-xl-5
-                    +constructor-btn([
-                        {
-                            name: 'crop',
-                            label: 'Обрезать изображение',
-                            active: true
+                .grid__col-12.grid__col-md-5.grid__col-xl-6
+                    .grid.grid--between-md.w-100.p-20
+                        .grid.grid--evenly.grid--column-md.w-100.w-unset-md
+                            +constructor-btn([
+                                {
+                                    name: 'crop',
+                                    dif: 'crop',
+                                    label: 'Обрезать изображение',
+                                    active: true
 
-                        },{
-                            name: 'fill',
-                            label: 'Залить изображение',
-                        },{
-                            name: 'contrast',
-                            label: 'Контрастность изображения',
-                        }
-                    ])
-                    +range([
-                        {
-                            name: 'crop',
-                            active: true,
-                            toggleId: 'toggle-crop',
-                            rangeValue: 'value-crop',
-                            value: '80'
-                        },{
-                            name: 'fill',
-                            toggleId: 'toggle-fill',
-                            rangeValue: 'value-fill',
-                            value: '50'
-                        },{
-                            name: 'contrast',
-                            toggleId: 'toggle-contrast',
-                            rangeValue: 'value-contrast',
-                            value: '20'
-                        }
-                    ])
-                    +button({button : 'Запостить', type : 'submit'})(class='button--upload')
-                    +button({button : 'Отмена', type : 'reset'})(class='button--upload')
+                                },{
+                                    name: 'fill',
+                                    dif: 'fill',
+                                    label: 'Залить изображение',
+                                },{
+                                    name: 'contrast',
+                                    dif: 'contrast',
+                                    label: 'Контрастность изображения',
+                                }
+                            ])
+                        +range([
+                            {
+                                name: 'crop',
+                                id: 'crop',
+                                active: true,
+                                toggleId: 'toggle-crop',
+                                rangeValue: 'value-crop',
+                                name: 'crop',
+                                value: '80'
+                            },{
+                                name: 'fill',
+                                id: 'fill',
+                                toggleId: 'toggle-fill',
+                                rangeValue: 'value-fill',
+                                name: 'fill',
+                                value: '50'
+                            },{
+                                name: 'contrast',
+                                id: 'contrast',
+                                toggleId: 'toggle-contrast',
+                                rangeValue: 'value-contrast',
+                                name: 'contrast',
+                                value: '20'
+                            }
+                        ])
+                    .grid.grid--column.grid--row-xl.grid--between-xl
+                        .grid__col-12.grid__col-xl-5.mt-20
+                            +button({button : 'Запостить', type : 'submit'})(class='button--upload')
+                        .grid__col-12.grid__col-xl-5.mt-20
+                            +button({button : 'Отмена', type : 'reset'})(class='button--reset')
 
 
 

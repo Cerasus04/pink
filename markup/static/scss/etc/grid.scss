@@ -1,6 +1,10 @@
 .bg-color {
     background-color: $grey-light;
 }
+.w-100 {
+    width: 100%;
+}
+
 .bg-color-tr {
     position: relative;
     background-color: $grey-light;
@@ -42,6 +46,9 @@
 }
 .mt-85 {
     margin-top: 85px;
+}
+.p-20 {
+    padding: 20px 0;
 }
 .column-gap {
     column-gap: 20px;
@@ -205,6 +212,9 @@
 }
 
 @media(min-width: $tablet-width) {
+    .w-unset-md {
+        width: unset;
+    }
     .bg-color-tr {
         &::before {
             height: 20%;

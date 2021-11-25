@@ -1,3 +1,9 @@
 mixin constructor-btn(data)
     each btn in data
-        button(type='button' class='constructor-btn constructor-btn--' + btn.name name=btn.name aria-label=btn.label)(class=btn.active ? 'constructor-btn--active' : '')
+        button(type='button' class=['constructor-btn', btn.dif && 'constructor-btn--' + btn.dif, btn.active && 'constructor-btn--is-active'], name=btn.name, aria-label=btn.label)
+
+
+
+//- mixin constructor-btn(data)
+//-     each btn in data
+//-         button(type='button' class='constructor-btn constructor-btn--' + btn.dif name=btn.name aria-label=btn.label)(class=btn.active ? 'constructor-btn--active' : '')

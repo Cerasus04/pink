@@ -1,7 +1,7 @@
 data = {
     logo: {
         default: {
-            href : '#',
+            href : 'index.html',
             icons : [
                 {
                     'media' : 'mb',

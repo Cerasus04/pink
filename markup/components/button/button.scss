@@ -1,8 +1,8 @@
 .button {
     display: block;
-    width: 280px;
+    width: 100%;
     margin: 0 auto;
-    padding: 21px 34px;
+    padding: 21px;
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
@@ -13,6 +13,7 @@
 }
 .button--download {
     margin-top: 350px;
+    width: 280px;
     color: $white;
     border: 3px solid $white;
 
@@ -26,11 +27,40 @@
       background-color: $white;
     }
 }
-@media(min-width: $tablet-width) {
-    .button {
-        width: 300px;
+.button--upload {
+    color: $pink;
+    border: 3px solid $pink;
+
+    &:hover {
+      color: $white;
+      background-color: $pink;
     }
+
+    &:active {
+      color: rgba($white, 0.3);
+      background-color: $pink;
+    }
+  }
+
+.button--reset {
+    color: rgba($blue-dark, 0.1);
+    border: 3px solid rgba($blue-dark, 0.1);
+
+    &:hover {
+        color: rgba($blue-dark, 0.3);
+        border-color: rgba($blue-dark, 0.3);
+    }
+
+    &:active {
+        color: rgba($white, 0.3);
+        border-color: transparent;
+        background-color: rgba($blue-dark, 0.3);
+    }
+}
+
+@media(min-width: $tablet-width) {
     .button--download {
+        width: 300px;
         margin-top: 0;
     }
 }
